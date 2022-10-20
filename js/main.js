@@ -16,4 +16,9 @@ elForm.addEventListener("submit", (evt) => {
   const api = new XMLHttpRequest();
   api.open("GET", url, true);
   api.send();
+
+  elNameInput.value = null;
+  elEmailInput.value = null;
+  elSubjectInput.value = null;
+  elTextInput.value = null;
 });
