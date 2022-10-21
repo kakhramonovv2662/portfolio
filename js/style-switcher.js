@@ -28,11 +28,19 @@ dayNight.addEventListener("click", () => {
   dayNight.querySelector("i").classList.toggle("fa-sun");
   dayNight.querySelector("i").classList.toggle("fa-moon");
   document.body.classList.toggle("dark");
+  if (document.body.classList.contains("dark")) {
+    document.querySelector("#white_logo").classList.add("block");
+    document.querySelector("#dark_logo").classList.add("none");
+  } else {
+    document.querySelector("#white_logo").classList.remove("block");
+    document.querySelector("#dark_logo").classList.remove("none");
+  }
 });
 
 window.addEventListener("load", () => {
   if (document.body.classList.contains("dark")) {
     dayNight.querySelector("i").classList.add("fa-sun");
+    console.log("salom");
   } else {
     dayNight.querySelector("i").classList.add("fa-moon");
   }

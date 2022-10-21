@@ -334,6 +334,14 @@ ul {
   transform: scale(1.05);
 }
 
+.none {
+  display: none !important;
+}
+
+.block {
+  display: inline-block !important;
+}
+
 @media only screen and (max-width: 991px) {
   .home__info {
     flex: 0 0 100%;

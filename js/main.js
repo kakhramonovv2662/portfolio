@@ -1,3 +1,5 @@
+AOS.init();
+
 const elForm = document.querySelector("#form");
 const elNameInput = document.querySelector("#name");
 const elEmailInput = document.querySelector("#email");
