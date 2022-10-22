@@ -224,11 +224,6 @@ ul {
   padding-right: 20px;
 }
 
-@media only screen and (max-width: 1199px) {
-  .container {
-    padding-top: 70px !important;
-  }
-}
 .aside {
   width: 270px;
   background: var(--bg-black-100);
@@ -289,7 +284,7 @@ ul {
   cursor: pointer;
   position: fixed;
   left: 300px;
-  top: 20px;
+  top: 5px;
   border-radius: 5px;
   background: var(--bg-black-100);
   display: none;
