@@ -71,10 +71,10 @@
             />
           </a>
         </div>
-        <div class="aside__toggler">
+        <div class="aside__toggler toggle">
           <span></span>
         </div>
-        <ul class="aside__nav">
+        <ul class="aside__nav nav">
           <li>
             <a class="active" href="#home"><i class="fa fa-home"></i>Home</a>
           </li>
@@ -95,7 +95,7 @@
 
       <div class="main-content">
         <!-- Home section start -->
-        <section id="home" class="home home__section">
+        <section id="home" class="home activeSec home__section section">
           <div class="container">
             <div data-aos="fade-up" data-aos-duration="3000" class="home__row">
               <div class="home__info padd-15">
@@ -103,13 +103,13 @@
                   Hello, my name is <span>Kakhramonov Ibrohim</span>
                 </h3>
                 <h3 class="home__my-profession">
-                  I'm a <span>Programmer</span>
+                  I'm a <span class="typing"></span>
                 </h3>
                 <p>
                   I'm a Programmer with experience for over 8 months. I prepare
                   websites for magazines, customer and restaurants.
                 </p>
-                <a class="btn home__hire-me" href="#contact">Hire Me</a>
+                <a class="btn" href="#">Download CV</a>
               </div>
               <div class="home__img padd-15">
                 <img
@@ -125,7 +125,7 @@
         <!-- Home section start -->
 
         <!-- About section start -->
-        <section id="about" class="about about__section">
+        <section id="about" class="about home__section section">
           <div
             class="container about__container"
             data-aos="fade-up"
@@ -183,8 +183,9 @@
                     </div>
                     <div class="home__row">
                       <div class="about__buttons padd-15">
-                        <a class="btn" href="#">Download CV</a>
-                        <a class="btn home__hire-me" href="#contact">Hire Me</a>
+                        <a href="#contact" class="btn home__hire-me hire"
+                          >Hire Me</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -353,7 +354,7 @@
         </section>
 
         <!-- Services section start -->
-        <section id="services" class="services about__section">
+        <section id="services" class="services home__section section">
           <div
             class="container services__container"
             data-aos="fade-up"
@@ -447,7 +448,7 @@
         </section>
 
         <!-- Portfolio section start -->
-        <section id="portfolio" class="portfolio about__section">
+        <section id="portfolio" class="portfolio home__section section">
           <div
             class="container services__container"
             data-aos="fade-up"
@@ -518,7 +519,7 @@
         </section>
 
         <!-- Portfolio section start -->
-        <section id="contact" class="contact about__section">
+        <section id="contact" class="contact home__section section">
           <div
             class="container services__container"
             data-aos="fade-up"
@@ -639,7 +640,7 @@
     </div>
     <!-- === Main container end === -->
 
-    <div class="style-switcher">
+    <div class="style-switcher switch">
       <div class="style-switcher-toggler s-icon">
         <i class="fa fa-cog fa-spin"></i>
       </div>
@@ -656,6 +657,10 @@
       </div>
     </div>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="js/style-switcher.js"></script>

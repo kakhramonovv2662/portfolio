@@ -1,12 +1,13 @@
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
 
 styleSwitcherToggle.addEventListener("click", () => {
-  document.querySelector(".style-switcher").classList.toggle("open");
+  document.querySelector(".switch").classList.toggle("open-switch");
 });
 
-window.addEventListener("scroll", () => {
-  if (document.querySelector(".style-switcher").classList.contains("open")) {
-    document.querySelector(".style-switcher").classList.remove("open");
+window.addEventListener("scroll", function () {
+  console.log("sakom");
+  if (document.querySelector(".switch").classList.contains("open-switch")) {
+    document.querySelector(".switch").classList.remove("open-switch");
   }
 });
 
