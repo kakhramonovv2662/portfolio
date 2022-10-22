@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
+  transition: all 0.3s ease;
 
   &__logo {
     position: absolute;
@@ -68,6 +69,7 @@
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 
     span {
       height: 2px;
@@ -94,6 +96,21 @@
         top: 6px;
         left: 0;
         content: "";
+      }
+    }
+  }
+
+  &__toggler.open {
+    span {
+      background-color: transparent;
+      &::before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        top: 0;
       }
     }
   }
@@ -125,12 +142,27 @@
   }
 }
 
+.active {
+  color: var(--skin-color) !important;
+}
+
 @media only screen and (max-width: 1199px) {
   .aside {
     left: -270px;
+
+    &__toggler {
+      left: 30px;
+      display: flex;
+    }
   }
 
-  .main-content {
-    padding-left: 0;
+  .open {
+    left: 0;
+  }
+
+  .aside {
+    .open {
+      left: 300px;
+    }
   }
 }

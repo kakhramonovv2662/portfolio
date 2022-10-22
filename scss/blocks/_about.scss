@@ -12,6 +12,19 @@
     top: 0;
     right: 0;
     opacity: 1;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .active {
+      z-index: 2;
+      opacity: 1;
+    }
 
     &--title {
       flex: 0 0 100%;
@@ -113,7 +126,6 @@
   &__buttons {
     margin-top: 30px;
     a {
-      margin-right: 15px;
       margin-top: 10px;
     }
   }

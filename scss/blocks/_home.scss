@@ -14,6 +14,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
   }
 
   &__row {
@@ -72,6 +81,7 @@
   &__about {
     font-size: 28px;
     margin: 15px 0;
+    color: var(--text-black-900);
 
     span {
       font-family: "Clicker Script", cursive;
@@ -84,6 +94,7 @@
   &__my-profession {
     font-size: 30px;
     margin: 15px 0;
+    color: var(--text-black-900);
 
     span {
       color: var(--skin-color);
@@ -98,10 +109,6 @@
 .padd-15 {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.main-content {
-  padding-left: 270px;
 }
 
 .btn {
@@ -122,12 +129,43 @@
   }
 }
 
+.back-section {
+  z-index: 1;
+}
+
 .none {
   display: none !important;
 }
 
 .block {
   display: inline-block !important;
+}
+
+.activeSec {
+  z-index: 2 !important;
+  opacity: 1 !important;
+  animation: slideSection 1s ease;
+}
+
+.section.open {
+  left: 260px;
+}
+
+@keyframes slideSection {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .home {
+    &__section {
+      left: 0;
+    }
+  }
 }
 
 @media only screen and (max-width: 991px) {
